@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "fairray",
+    "password": "123456789",
+    "database": "my_app_development",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "operatorsAliases": false
+  },
+  "test": {
+    "username": "fairray",
+    "password": "123456789",
+    "database": "my_app_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "operatorsAliases": false
+  },
+  "production": {
+    "username": null,
+    "password": null,
+    "database": "my_app_production",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "operatorsAliases": false
+  }
+}
