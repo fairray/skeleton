@@ -1,4 +1,4 @@
-# Text lab app
+# Skeleton app
 
 ## Config db
 Before start app you need to configure db connection
