@@ -5,15 +5,15 @@
   "main": "./bin/www",
   "scripts": {
     "eslint": "eslint ./",
-    "stylelint": "stylelint '**/*.scss'",
+    "stylelint": "stylelint '**/*.scss' --config ./client/.stylelintrc",
     "lint": "yarn eslint && yarn stylelint",
     "serve-api": "DEBUG=text-lab:* nodemon --watch ./server ./server/bin/www", 
-    "serve-front": " webpack-dev-server --env.env=dev",
-    "build": "webpack",
+    "serve-front": "webpack-dev-server --env.env=dev --config ./client/webpack.config.js",
+    "build": "webpack --config ./client/webpack.config.js",
     "build:dev": "yarn build --env.env=dev",
     "build:prod": "yarn build --env.env=production",
-    "test": "yarn jest",
-    "test:coverage": "yarn jest --coverage"
+    "test": "yarn jest --config ./client/jest.config.js",
+    "test:coverage": "yarn test --coverage"
   },
   "dependencies": {
     "bcrypt": "^1.0.3",
