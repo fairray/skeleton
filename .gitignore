@@ -38,3 +38,6 @@ dist/
 coverage
 # Yarn error log
 yarn-error.log
+
+# Istanbul coverage dir
+.nyc_output

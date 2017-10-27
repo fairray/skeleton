@@ -14,7 +14,7 @@
     "build:prod": "yarn build --env.env=production",
     "test-front": "yarn jest --config ./client/jest.config.js",
     "test-front:coverage": "yarn test-front --coverage",
-    "test-server": "mocha --recursive --exit ./server/test"
+    "test-server": "nyc mocha --recursive --exit ./server/test"
   },
   "dependencies": {
     "bcrypt": "^1.0.3",
@@ -54,6 +54,7 @@
     "mocha": "^4.0.1",
     "node-sass": "^4.5.3",
     "nodemon": "^1.12.1",
+    "nyc": "^11.2.1",
     "raf": "^3.4.0",
     "react-test-renderer": "^16.0.0",
     "sass-loader": "^6.0.6",
